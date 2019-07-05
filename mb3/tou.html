@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title></title> 
+		<link rel="stylesheet" href="css/dateRange.css" type="text/css" charset="utf-8" /> 
+	 	<script src="js/alertstyle.js"></script>
+		<script src="js/dateRange.js?j=3" type="text/javascript" charset="utf-8"></script> 
+		<style>
+			.ipicon{background:url(images3/icon.png) 100% 3px no-repeat;border:1px #CFCFCF solid;padding:1px 3px 1px 10px; width: 110px;background-color: #FFFFFF;height: 34px;line-height: 34px; }
+		</style>
+	</head>
+	<body data-id="@hotelid" data-url="@urlapi"> 
+		<div class="head">
+		    <div class="secondDiv" >
+		        <div class="head_left">
+		        	<div class="headHotel_message">
+		        		<a href="index.html"><img src="" class="hotelLogo"/></a> 
+ 		        	</div>
+		        </div>
+		        <div class="fl tel"><span data-name="xmltext21"></span>：<span class="hotelTel"></span></div>
+		        <ul class="clearfix head_right"> 
+		            <li><a class="shopcart" data-name="xmlmallb3">购物车</a>|<a><input type='button' value="" class="hideInput_style"/></a>|<a href="contact.html" data-name="xmltext3"></a>|
+		            	<div class="head_choose">
+		            		<input type="button" class="hideInput_style input" id="langShow" value=""/> 
+					        <div class="select">
+					            <ul>
+					                 @lang
+					            </ul>
+					        </div> 
+				        </div>
+		               <a class="room_booked"><input type="button" data-name="xmlbook102" value="" data-name="xmltext21" class="hideInput_style"/></a>
+		            </li>
+		        </ul> 
+		    </div>
+		    <div class="secondDiv">
+		    	<div class="choose_room">
+		    		<p class="titie" data-name="xmlbook102"></p>
+		    		 <div class="choose_box inputWide1 mg4">
+			    		<input type="button" class="hideInput_style input" value="" data-id='' id='hotelID'/>
+				        <div class="select">
+				            <ul class="inputUlwide1 hoteltou">
+				                
+				            </ul>
+				        </div> 
+			         </div>  
+			        <input id="intime" type="text"  class="ipicon itime" /> 
+			        <input id="outtime" type="text"  class="ipicon itime" />
+			        <div class="poptime" id="rl"></div>
+			        <input value="" data-name="xmlbook102" type="button" class="btn_booked"/>
+		    	</div> 
+			    <div class="enter_content login clearfix"> 
+			    	<div class="enter_left booked mg1 mg2">
+			    		<ul>
+			    			<li><input type="button" value="" data-name="xmlbook2" class="hideInput_style searchB "/></li> 
+			    		</ul>
+			    		<div class="enter_left1">
+			    			<p class="join" data-name="xmlvip49"></p>
+			    			<p><a><input type="button" value="" data-name="xmlvip8" class="hideInput_style"/></a></p>
+			    			<p class="tip" data-name="xmlvip73"></p>
+			    		</div>
+			    	</div>
+			    	<div class="enter_right">
+			    		<input type="text" id="phoneLog" style="display: none;" />
+			    		<input type="text"  id="phoneLog1" value="" data-name="xmlbook16"/><br />
+			    		<input type="text" class="first2" id='showPwd1' value="" data-name="xmlvip51" />
+			    	    <input type="password" class="first2" id='pwd1' style="display: none;" /><br />
+			    	    <a class="forget_password"><input type="button" value="" data-name="xmlvip52" class="hideInput_style"/></a><br />
+			    	    <a class="btn_login"><input type="button" id='btn_login' value="" data-name="xmlvip7" class="hideInput_style"/></a>
+			    	</div>
+			    </div>
+			    <div class="enter_content register clearfix"> 
+			    	<div class="enter_left booked mg6 mg5">
+			    		<ul>
+			    			<li><input type="button" data-name="xmlbook2" value="" class="hideInput_style searchB "/></li> 
+			    		</ul>
+			    		<div class="enter_left1">
+			    			<p class="join" data-name="xmlvip49"></p>
+			    			<p><a><input type="button" value="" data-name="xmlvip36" class="hideInput_style"/></a></p>
+			    			<p class="tip" data-name="xmlvip73"></p>
+			    		</div>
+			    	</div>
+			    	<div class="reg_right">
+			    		<input type="text" class="first1" id="lastName" style="display: none;"/>
+			    		<input type="text" class="first1" id="lastName1" value="" data-name="xmlbook42"/>
+			    		<input type="text" class="first1" id="firstName" style="display: none;"/>
+			    		<input type="text" class="first1" value="" id="firstName1" data-name="xmlbook43"/>			    		
+			    		<input type="text" class="first2" id="phoneReg" style="display: none;"/> 
+			    		<input type="text" class="first2" value="" id="phoneReg1"  data-name="xmlbook16" /><br />
+			    	    <input type="text" class="first2" id="emailReg" style="display: none;"/>
+			    	     <input type="text" class="first2" value="" id="emailReg1"  data-name="xmltext151" />
+			    	    <input type="text" class="first2" id='showPwd' value="" data-name="xmlvip51"/>
+			    	    <input type="password" class="first2" id='pwd' style="display: none;"/><br />
+			    	     <div class="choose_box regsex inputWide1 mg4">
+				    		<div class="reginput"><p id='xb' data-name="xmlvip10"></p></div>
+					        <div class="select">
+					            <ul class="inputUlwide1">
+					                <li data-name="xmlvip10"></li>
+					                <li data-name="xmlvip11"></li> 
+					            </ul>
+					        </div> 
+				        </div> 
+				        <input type="text" class="regCode" id="regCode" style="display: none;"/>
+				        <input type="text" class="regCode" id="regCode1" value="" data-name="xmlvip34" />
+			    	    <input type="button" class="getCode" data-name="xmltext161" value="" id='sign_yzm'/>
+			    	    <a class="btn_reg"><input type="button" value="" data-name="xmlvip8" class="hideInput_style"/></a>
+			    	</div>
+			    </div>
+			    <div class="enter_content forgetPW clearfix"> 
+			    	<div class="enter_left booked mg1 mg2">
+			    		<ul>
+			    			<li><input type="button" value="" data-name="xmlbook2" class="hideInput_style searchB "/></li>
+			    		</ul>
+			    		<div class="enter_left1">
+			    			<p class="join" data-name="xmlvip49"></p>
+			    			<p><a><input type="button" value="" data-name="xmlvip36" class="hideInput_style"/></a></p>
+			    			<p class="tip" data-name="xmlvip73"></p>
+			    		</div>
+			    	</div>
+			    	<div class="enter_right">
+			    		<input type="text" id="phoneFog" style="display: none;"/>
+			    		<input type="text" id="phoneFog1"  value="" data-name="xmlbook16"/><br />
+			    		<input type="text" id="nameFog" style="display: none;"/>
+			    		<input type="text"  id="nameFog1" value="" data-name="xmlbook15"/><br />
+			    		<input type="text" class="yzCode" id="codeFog" style="display: none;" />
+			    		<input type="text" class="yzCode"  id="codeFog1" value="" data-name="xmlvip34"/>
+			    	    <input type="button" class="forget_password" id="forget_yzm" data-name="xmltext161" value=""/>
+			    	    <br />
+			    	    <a class="btn_login"><input type="button" value="" data-name="xmltext15" id='forgetPW' class="hideInput_style"/></a>
+			    	</div>
+			    </div>
+			      <div class="enter_content changePwd clearfix"> 
+			    	<div class="enter_left booked mg1 mg2">
+			    		<ul>
+							<li><input type="button" value="" data-name="xmlbook2" class="hideInput_style searchB "/></li><br />
+			    			<li><input type="button" value=" " data-name="xmlmallb1" class="hideInput_style shop_order"/></li><br />
+			    			<li><input type="button" value=" " data-name="xmlmallb2" class="hideInput_style goods_addr"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip75" class="hideInput_style myBooked"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip53" class="hideInput_style changePwd2"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip69" class="hideInput_style leave_login"/></li>			    		</ul>
+			    		<div class="enter_left1">
+			    			<p class="join" data-name="xmlvip53"></p>
+			    			<p><a><input type="button" data-name="xmlvip80" value="" class="hideInput_style"/></a></p>
+			    			<p class="tip" data-name="xmlvip74"></p>
+			    		</div>
+			    	</div>
+			    	<div class="enter_right">
+			    		<input type="text" id='showOldPwd' data-name="xmlvip54" value="" />
+			    	    <input type="password"  id='oldPwd'/><br />
+			    	    <input type="text" id='showNewPwd' data-name="xmlvip55" value="" />
+			    	    <input type="password"  id='newPwd'/><br /> 
+			    	    <input type="text" id='showNewPwd1' data-name="xmlvip89" value="" />
+			    	    <input type="password"  id='newPwd1'/><br /> 
+			    	    <a class="btn_login"><input type="button" data-name="xmlbook19" value="" class="hideInput_style"/></a>
+			    	</div>
+			    </div>
+			    <div class="enter_content personMessage clearfix"> 
+			    	<div class="enter_left logined mg1 mg3">
+			    		<ul class="pr1">
+			    			<li><input type="button" value="" data-name="xmlbook2" class="hideInput_style searchB "/></li><br />
+			    			<li><input type="button" value=" " data-name="xmlmallb1" class="hideInput_style shop_order"/></li><br />
+			    			<li><input type="button" value=" " data-name="xmlmallb2" class="hideInput_style goods_addr"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip75" class="hideInput_style myBooked"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip53" class="hideInput_style changePwd2"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip69" class="hideInput_style leave_login"/></li>
+			    		</ul>   
+			    	</div>
+			    	<div class="person_right">
+			    		<p><span data-name="xmlvip66"></span>!<label></label><label></label></p> 
+			    		 <ul>
+			    		    <li><span><a data-name="xmltext151"></a>：<label></label></span><span><a data-name="xmlvip32"></a>：<label></label></span><a><input type="button" data-name="xmlvip17" value="" class="hideInput_style"/></a></li>
+			    		    <li><span><a data-name="xmlbook16"></a>：<label></label></span><span><a data-name="xmlvip76"></a>：<label></label></span><a><input type="button" data-name="xmlvip31" value="" class="hideInput_style"/></a></li>
+			    		 </ul>
+			    	</div>
+			    </div>
+			    <div class="enter_content addshopAddr clearfix"> 
+			    	<div class="enter_left logined mg1">
+			    		<ul class="pr1">
+			    			<li><input type="button" value="" data-name="xmlbook2" class="hideInput_style searchB "/></li><br />
+			    			<li><input type="button" value=" " data-name="xmlmallb1" class="hideInput_style shop_order"/></li><br />
+			    			<li><input type="button" value=" " data-name="xmlmallb2" class="hideInput_style goods_addr"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip75" class="hideInput_style myBooked"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip53" class="hideInput_style changePwd2"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip69" class="hideInput_style leave_login"/></li>
+			    		</ul>   
+			    	</div>
+			    	<div class="person_right">
+			    		<div class="addrTitle" data-name="xmlmall36"> </div>  
+			    		<div class="addrtable"> 
+			    			<ol class="tbhead">
+			    				<li class="name" data-name="xmlmall39"> </li><li class="address" data-name="xmlmall55"> </li><li class="phone" data-name="xmlmall68"> </li><li class="operate" data-name="xmlmall67"> </li>	
+			    			</ol> 
+			    			 
+			    		</div>
+			    		<div class="addAddress_btn"> 
+ 			    		</div>
+			    		<div class="addAddress changeAddre">
+			    			<p class="addr">*<label data-name="xmlmall91"> </label></p>
+			    			<div class="addrchoose">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td>
+											<select id="country">
+							 					<option id="china" data-name="xmlmall65"> </option>
+							 					<option id="foreign" data-name="xmlmall60"> </option>
+											</select>
+										</td>
+										<td> 
+											<select id="province" name="province" onchange="doProvAndCityRelation();">
+							 					<option id="choosePro" value="0" data-name="xmlmall44"> </option>
+											</select>
+										</td> 
+										<td>
+											<select id="citys" name="city" onchange="doCityAndCountyRelation();">
+							 						<option id='chooseCity' value='0' data-name="xmlmall45"> </option>
+											</select>
+										</td> 
+										<td>
+											<select id="county" name="county">
+							 					<option id='chooseCounty' value='0' data-name="xmlmall46"> </option>
+											</select>
+										</td>
+										<td>
+											<input type="text" class="addrxq"/>
+										</td>
+									</tr>
+									<tr>
+									    <td colspan="2">* <label data-name="xmlbook15"> </label></td>
+									    <td colspan="2">* <label data-name="xmlbook16"> </label></td>
+									    <td></td>
+									</tr>
+									<tr>
+										<td colspan="2"><input type="text" id="name" class="msg"/></td>
+									    <td colspan="2"><input type="text" id="phone" class="msg"/></td>
+									    <td></td>
+									</tr>
+									<tr>
+										<td colspan="5">
+											<input type="checkbox" checked="checked" class="addrRadio"/>&nbsp;<label data-name="xmlmall64"> </label>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5">
+											 <input type="button" class="hideInput_style save" value=" " data-name="xmlmall66"/>
+										</td>
+									</tr>
+								</table>
+							</div>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="enter_content shopOrder clearfix" style="display:none;"> 
+			    	<div class="enter_left logined mg1 mg6">
+			    		<ul class="pr1">
+			    			<li><input type="button" value="" data-name="xmlbook2" class="hideInput_style searchB "/></li><br />
+			    			<li><input type="button" value=" " data-name="xmlmallb1" class="hideInput_style shop_order"/></li><br />
+			    			<li><input type="button" value=" " data-name="xmlmallb2" class="hideInput_style goods_addr"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip75" class="hideInput_style myBooked"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip53" class="hideInput_style changePwd2"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip69" class="hideInput_style leave_login"/></li>
+			    		</ul>  
+			    	</div>
+			    	<div class="person_right shopOrderRight" style="margin-bottom:40px;">
+			    		<div class="shop_tap clearfix">
+				   	   	   <ul class="clearfix store_sort"> 
+				   	   	   	   <li><input type="button" data-pay='' data-status='' class="hideInput_style" value=" " data-name="xmlmall70"/></li>
+				   	   	   	   <li><input type="button" data-pay=0 data-status=0 class="hideInput_style" value=" " data-name="xmlmall71"/></li>
+				   	   	   	   <li><input type="button" data-pay=1 data-status=0 class="hideInput_style" value=" " data-name="xmlmall72"/></li>
+				   	   	   	   <li><input type="button" data-pay=1 data-status=1 class="hideInput_style" value=" " data-name="xmlmall73"/></li>
+				   	   	   	    <li><input type="button" data-pay=1 data-status=2 class="hideInput_style" value=" " data-name="xmlmall76"/></li>
+ 				   	   	   </ul>
+				   	  </div>  
+			   	   	 <div class="pag clearfix" id="pagshopOrder">
+            
+                     </div>    
+			    	</div>
+			    </div>
+			     <div class="enter_content storeRecord clearfix"> 
+			    	<div class="enter_left logined mg1 mg6">
+			    		<ul>
+			    			<li><input type="button" value="" data-name="xmlbook2" class="hideInput_style searchB "/></li><br />
+			    			<li><input type="button" value=" " data-name="xmlmallb1" class="hideInput_style shop_order"/></li><br />
+			    			<li><input type="button" value=" " data-name="xmlmallb2" class="hideInput_style goods_addr"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip75" class="hideInput_style myBooked"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip53" class="hideInput_style changePwd2"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip69" class="hideInput_style leave_login"/></li>
+			    		</ul>  
+			    	</div>
+			    	<div class="record_right">
+			    		 <p class="border1"><span data-name="xmlvip32"></span>:<label></label><a><input type="button" value="" data-name="xmlvip41" class="hideInput_style"/></a></p>
+			    		 <ul class="record_ul">
+			    		   
+			    		 </ul>
+			    		  <div class="pag clearfix" id="pagcz">
+            
+                          </div>
+			    	</div>
+			    </div>
+			     <div class="enter_content integralRecord clearfix"> 
+			    	<div class="enter_left logined mg1 mg6">
+			    		<ul>
+			    			<li><input type="button" value="" data-name="xmlbook2" class="hideInput_style searchB "/></li><br />
+			    			<li><input type="button" value=" " data-name="xmlmallb1" class="hideInput_style shop_order"/></li><br />
+			    			<li><input type="button" value=" " data-name="xmlmallb2" class="hideInput_style goods_addr"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip75" class="hideInput_style myBooked"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip53" class="hideInput_style changePwd2"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip69" class="hideInput_style leave_login"/></li>
+			    		</ul>  
+			    	</div>
+			    	<div class="record_right">
+			    		 <p class="border1"><span data-name="xmlvip33"></span>:<label></label><a><input type="button" value="" data-name="xmlvip41" class="hideInput_style"/></a></p>
+			    		 <ul class="record_ul">
+			    		   
+			    		 </ul>
+		    		    <div class="pag clearfix" id="pagjf">
+            
+                        </div>
+			    	</div>
+			    </div>
+			      <div class="enter_content orderAdmin clearfix"> 
+			    	<div class="enter_left logined mg1 mg6">
+			    		<ul>
+			    			<li><input type="button" value="" data-name="xmlbook2" class="hideInput_style searchB "/></li><br />
+			    			<li><input type="button" value=" " data-name="xmlmallb1" class="hideInput_style shop_order"/></li><br />
+			    			<li><input type="button" value=" " data-name="xmlmallb2" class="hideInput_style goods_addr"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip75" class="hideInput_style myBooked"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip53" class="hideInput_style changePwd2"/></li><br />
+			    			<li><input type="button" value="" data-name="xmlvip69" class="hideInput_style leave_login"/></li>
+			    		</ul>  
+			    	</div>
+			    	<div class="record_right">
+			    		 <p class="border1" data-name="xmlvip75"></p>
+			    		 <ul class="order_ul">
+			    		  
+			    		 </ul>
+		    		    <div class="pag clearfix" id="pagOrder">
+            
+                        </div>
+			    	</div>
+			    </div>
+			    <div class="enter_content searchBooking clearfix"> 
+			    	<div class="enter_left booked mg3 mg5">
+			    		<ul>
+			    			<li><input type="button" data-name="xmlbook2" value="" class="hideInput_style searchB "/></li>
+			    			
+			    		</ul>
+			    		<div class="enter_left1">
+			    			<p class="join" data-name="xmlvip49"></p>
+			    			<p><a><input type="button" data-name="xmlvip78" value="" class="hideInput_style"/></a></p>
+			    			<p class="tip" data-name="xmlvip79"></p>
+			    		</div>
+			    	</div>
+			    	<div class="search_right">
+			    		<input type="text" class="first1" id="orOrder" style="display: none;"/> 
+			    		<input type="text" class="first1" value="" id="orOrder1" data-name="xmlbook68"/><br />
+			    		<input type="text" class="first2" id="orPhone" style="display: none;"/>
+			    		<input type="text" class="first2" id="orPhone1" value="" data-name="xmlbook16"/>
+			    		<input type="text" class="first2" id="orName" style="display: none;"/>
+			    		<input type="text" class="first2" value="" id="orName1" data-name="xmlbook15"/> 
+			    	    <a class="btn_search"><input type="button" value="" data-name="xmlbook60" class="hideInput_style"/></a>
+			    	</div>
+			    </div>
+			     <div class="enter_content searchMessage clearfix"> 
+			    	<div class="enter_left searchBooked mg1">
+			    		<ul class="pr2">
+			    			<li><input type="button" value="" data-name="xmlbook2" class="hideInput_style searchB "/></li><br/>
+			    			<li><input type="button" value="" data-name="xmlvip1" class="hideInput_style"/></li> 
+			    		</ul>
+			    		<div class="Message1">
+			    			<p data-name="xmltext157"></p> 
+			    			<ol>
+			    				<li><a data-name="xmlbook56"></a>:<label></label></li>
+			    				<li><a data-name="xmlbook120"></a>:<label></label></li>
+			    				<li><span><a data-name="xmlbook7"></a>:<label></label></span></li>
+			    				<li><span><a data-name="xmlbook8"></a>:<label></label></span></li>
+			    				<li><label style="padding: 0;"><a data-name="xmlbook119"></a>:<label></label></label></li>
+			    				<li><a data-name="xmlbook39"> </a>:<label></label></li>
+			    				<li><a data-name="xmlbook13"> </a>:<label></label></li> 
+
+			    			</ol>
+			    		</div>
+			    	</div>
+			    	<div class="Message2">
+			    		<p data-name="xmlbook48"></p> 
+		    			<ol>
+		    				<li><a data-name="xmlbook15"> </a>: <label></label></li>
+		    				<li><a data-name="xmlbook16">  </a>:<label></label></li>
+		    			</ol> 
+			    	</div>
+			    </div>
+		    </div>
+		</div> 
+		<div id="shadow"></div> 
+		<img id="loading2" src="images3/loading.gif" />
+        <div id="layer_load2"></div>
+    	<script type="text/javascript" src="js/admin/tou.js?j=3"></script>
+	</body>
+</html>

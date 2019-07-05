@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="@cssurl"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery.min.js?j=3"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js?j=3"></script>
+		<script type="text/javascript" src="js/public.js?j=3"></script>
+		<script type="text/javascript" src="js/index.js?j=3"></script>  
+		<script type="text/javascript" src="js/admin/mallbook1.js?j=3"></script>
+		<link rel="shortcut icon" href="@iconurl" type="image/x-icon" />
+	</head>
+	<body data-id="@hotelid" data-url="@urlapi"> 
+		<!--#include file="tou.html"-->
+		<div class="index_banner pr"> 
+			<div class="focus"> 
+		    	<ul> 
+		        	 @lbimg
+		       </ul> 
+		    </div>
+		</div>
+		<div class="index_content clearfix">
+			<div class="secondDiv">
+				<div class="nav">
+					<ul>
+						 
+					</ul> 
+				</div>
+			</div>	 
+		    <div class="secondDiv">
+			   	<div class="left_box">
+					<div class="hotel_intro">
+						<div class="jiathis_style_24x24"> 
+							<a class="jiathis_button_qzone"></a>
+							<a class="jiathis_button_tsina"></a> 
+							<a class="jiathis_button_weixin"></a>  
+						</div>
+						<p class="share"> 
+							<span data-name="xmltext177"> </span> 
+					    </p> 
+					    <p class="name hotelName"> </p>
+					    <p class="title shoptitle" data-name="xmlmall33"> </p> 
+					</div> 
+					<div style="height: 50px;" class="clearfix"></div> 
+					<div class="order_msg">
+						<div class="order_inner clearfix">
+							<div class="title" data-name="xmlmall30"> </div>
+							<div class="order_way">
+								<input type="button" class="hideInput_style active" value=" " data-id = "1" data-name="xmlmall31"/>
+								<input type="button" class="hideInput_style" data-id = "0" value=" " data-name="xmlmall32"/>
+							 </div>
+							<div class="clearfix malladdress"> 
+								<div class="moreaddr"> 
+								</div> 
+								<p><input type="button" class="hideInput_style open" data-name="xmltext168" value=" "/><input type="button" class="hideInput_style close" data-name="xmltext167" value=" "/></p>
+							</div>
+							<div class="order_addrchoose">
+								<input type="button" class="hideInput_style btn_newaddr" value=" " data-name="xmlmall36"/>
+								<input type="button" class="hideInput_style btn_addradmin" value=" " data-name="xmlmall37"/>
+							</div>
+						</div>
+					</div>
+					<div class="order_msgTwo">
+						<p class="ortitle" data-name="xmlmall33"> </p>
+						<div class="order_confrimlist clearfix"> 
+							 
+						</div>
+						<div class="order_bottom">
+							<span class="way"><label data-name="xmlmall34"> </label>:<label class="transway"> </label>&nbsp;<label class="freight">0</label></span>
+							<span class="total">(<label data-name="xmlmall79"></label>)<label data-name="xmlmall40"></label>: <label class="fare">0</label></span>
+						</div> 
+					</div>
+					<ol class="pr10 mall-pay">
+						<li class="person_mes mg11" data-name="xmlbook84"></li> 
+						<li class="clearfix">
+							 @pay
+						</li>
+					</ol> 
+					<div class="btn_order">
+						<a class="order_pre" href="mallxq.html" data-name="xmlbook38"></a>
+						<a class="order_next"><input value="" type="button" class="hideInput_style" data-name="xmlbook31"/></a>
+					</div>
+			   	</div>
+			</div>  
+		</div> 
+		<!--#include file="footer.html"--> 
+		<img id="loading" src="images3/loading.gif" />
+        <div id="layer_load"></div>
+        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?j=3" charset="utf-8"></script>
+	</body>
+</html>

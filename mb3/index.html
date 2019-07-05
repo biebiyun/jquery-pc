@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="@cssurl"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery.min.js?j=3"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js?j=3"></script>
+		<script type="text/javascript" src="js/public.js?j=3"></script>
+		<script type="text/javascript" src="js/index.js?j=3"></script> 
+		<script type="text/javascript" src="js/admin/index_data.js?j=3"></script>
+		<link rel="shortcut icon" href="@iconurl" type="image/x-icon" />
+	</head>
+	<body data-id="@hotelid" data-url="@urlapi"> 
+		 <!--#include file="tou.html"-->
+		<div class="index_banner pr"> 
+			<div class="focus"> 
+		    	<ul> 
+		        	@lbimg
+		       </ul> 
+		    </div>
+		</div>
+		<div class="index_content">
+			<div class="secondDiv">
+				<div class="nav">
+					<ul>
+						
+					</ul> 
+				</div> 
+				<div class="navhide">
+					
+				</div>
+			</div>	 
+		   <div class="secondDiv">
+				<div class="hotel_intro left_box"> 
+					<div class="jiathis_style_24x24"> 
+						<a class="jiathis_button_qzone"></a>
+						<a class="jiathis_button_tsina"></a> 
+						<a class="jiathis_button_weixin"></a>  
+					</div>
+					<p class="share"> 
+						<span data-name="xmltext177"></span> 
+				    </p> 
+				    <p class="name hotelName" data-name="xmltext178"></p>
+				    <p class="title" data-name="xmltext179"></p>
+				</div> 
+			</div> 
+		    <div class="bannerLeft"> 
+		   	</div>
+		    <div class="banner">
+				<ul class="img">
+					 @circleindex
+				</ul>  
+			</div>  
+			<div class="secondDiv">
+				<div class="hotel_activity left_box">
+					<div class="clearfix head1">
+						<p class="title1" data-name="xmltext180"></p>
+						<ul>
+							<li><input type="button" class="hideInput_style btn_right btn" value="&lt;"/></li>
+							<li class="numPoint"><label class="child"></label>/<label class="parent"></label></li>
+							<li><input type="button" class="hideInput_style btn_left btn" value="&gt;"/></li>
+						</ul>
+					</div>
+					<div class="activity_box">
+						<div class="next_box">
+						     
+					    </div>
+					</div> 
+				    <div class="hot_hotel">
+				    	<div class="hot_top clearfix">
+				    		<p data-name="xmltext65"></p>
+				    		<span><a href="hotels.html" data-name="xmltext64"></a>&nbsp;></span>
+				    	</div>
+				    	<p class="describe" data-name="xmltext181"></p>
+				        <div class="sort_intro indexhotel clearfix"> 
+							 
+						</div> 
+						<div style="height: 40px;"></div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<!--#include file="footer.html"-->
+		<img id="loading" src="images3/loading.gif" />
+        <div id="layer_load"></div>
+        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?j=3" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="@cssurl"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery.min.js?j=3"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js?j=3"></script> 
+		<script src="js/jQuery.Hz2Py-min.js?j=3"></script>
+		<script type="text/javascript" src="js/public.js?j=3"></script>
+		<script type="text/javascript" src="js/index.js?j=3"></script> 
+		<link rel="shortcut icon" href="@iconurl" type="image/x-icon" />
+	</head>
+	<body data-id="@hotelid" data-url="@urlapi">  
+        <!--#include file="tou.html"--> 
+         <div style="height: 70px;"></div>
+       <div class="index_content">
+		<div class="order_message">
+			<div class="secondDiv">
+				<p data-name="xmlvip57"></p>
+				<ul>
+					<li class="list1"><span data-name="xmltext85"></span><span></span><span></span></li>
+					<li class="list2"><span></span><span></span></li>
+					<li class="list2"><span class="price"></span><span data-name="xmltext134"></span></li>
+				</ul>
+			</div> 
+		</div>
+		<div class="thirdDiv write_message">
+			<p class="title" data-name="xmltext184"></p>
+			<ol>
+				<li class="person_mes" data-name="xmlbook73"></li>
+				<li>
+					<span>*<label  data-name="xmlvip9"></label></span>
+				    <div class="choose_box inputWide4 mg4">
+			    		<input type="button" class="hideInput_style inputDiv input" data-name="xmlvip10" value=""/>
+				        <div class="select">
+				            <ul class="inputUlwide4"> 
+				                <li><input type="button" data-name="xmlvip10" class="hideInput_style" value=""/></li>
+				                <li><input type="button" data-name="xmlvip11" class="hideInput_style" value=""/></li> 
+				            </ul>
+				        </div> 
+			         </div>  
+			         <span class="arrtime">*<label data-name="xmlbook157"> </label></span>
+			          <div class="timechoose boxhour inputWide5 mg4">
+			    		<input type="button" class="hideInput_style inputDiv input" data-name="xmlvip10" value=" "/>
+				        <div class="select">
+				            <ul class="inputUlwide5 hour">  
+				            </ul>
+				        </div> 
+			         </div> : 
+			          <div class="timechoose bocsec inputWide5 mg4">
+			    		<input type="button" class="hideInput_style inputDiv input" value=" "/>
+				        <div class="select">
+				            <ul class="inputUlwide5">  
+				            </ul>
+				        </div> 
+			         </div> 
+				</li>
+				<li> 
+					<span>*<label data-name="xmlbook42"></label></span>
+					<input type="text" class="xing"/>
+					<span>*<label data-name="xmlbook43"></label></span>
+					<input type="text" class="ming"/>
+				</li>
+				<li>
+					<span>*<label data-name="xmlbook80"></label></span>
+					<input type="text" id="phone1"/>
+					<span>*<label data-name="xmlbook113"></label></span>
+					<input type="text" class="email"/>
+				</li>
+				<li>
+					<span class="Remarks"><label data-name="xmlbook44"></label></span>
+					<textarea id='Remarks'></textarea>
+				</li>
+			</ol>
+			<ol class="pr10 room_pay">
+				<li class="person_mes mg11" data-name="xmlbook84"></li>
+				<li>
+					@ddzf 
+					<!--<input type="radio" name='pay' data-id='dd' class="payWay" checked="checked"/><span data-name="xmlbook53" style="width: auto;"></span>-->
+					<label class="tip" data-name="xmlbook107"></label>
+				</li>
+				<li class="payLine"><input type="radio" name='pay'/><span data-name="xmlbook138" style="width: auto;"></span><label class="tip" data-name="xmlbook107"></label></li>
+				<li class="clearfix">
+					 @zffs
+				</li>
+			</ol>
+			<div class="btn_order">
+				<a class="order_pre" href="book1.html" data-name="xmlbook38"></a>
+				<a class="order_next"><input value="" type="button" class="hideInput_style" data-name="xmlbook31"/></a>
+			</div>
+		</div>
+	  </div>
+		 <!--#include file="footer.html"-->
+		 <img id="loading" src="images3/loading.gif" />
+		<div id="layer_load"></div> 
+		<div id="shadow1"></div> 
+		<script type="text/javascript" src="js/admin/book2.js?j=3"></script>  
+	</body>
+</html>

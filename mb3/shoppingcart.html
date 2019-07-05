@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="@cssurl"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery.min.js?j=3"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js?j=3"></script>
+		<script type="text/javascript" src="js/public.js?j=3"></script>
+		<script type="text/javascript" src="js/index.js?j=3"></script>  
+		<script type="text/javascript" src="js/admin/shoppingcart.js?j=3"></script>
+		<link rel="shortcut icon" href="@iconurl" type="image/x-icon" />
+	</head>
+	<body data-id="@hotelid" data-url="@urlapi">  
+		<!--#include file="tou.html"-->
+		<div class="index_banner pr"> 
+			<div class="focus"> 
+		    	<ul> 
+		        	 @lbimg
+		       </ul> 
+		    </div>
+		</div>
+		<div class="index_content clearfix">
+			<div class="secondDiv">
+				<div class="nav">
+					<ul>
+						 
+					</ul> 
+				</div>
+			</div>	 
+		   <div class="secondDiv">
+		   	<div class="left_box">
+					<div class="hotel_intro">
+						<div class="jiathis_style_24x24"> 
+						<a class="jiathis_button_qzone"></a>
+						<a class="jiathis_button_tsina"></a> 
+						<a class="jiathis_button_weixin"></a>  
+					</div>
+					<p class="share"> 
+						<span data-name="xmltext177"> </span> 
+				    </p> 
+				    <p class="name hotelName"> </p>
+				    <p class="title shoptitle" data-name="xmlmallb3"> </p> 
+					</div> 
+					<div style="height: 50px;" class="clearfix"></div>
+				   <div class="order_confrimlist clearfix"> 
+						 
+					</div>
+					<div class="edit_all clearfix">
+						<input class="check" type="checkbox" /><label class="chooseall" data-name="xmlmall93"> </label><input type="button" class="hideInput_style delete"/>
+						<div class="account">
+							<span><label data-name="xmlmall94"> </label> <label class="shopnum"> 0</label> <label data-name="xmlmall16"></label>&nbsp;<label data-name="xmlbook51"></label>: <label data-name="xmlmall95"> </label> : <label class="shopprice">0.00</label>&nbsp;<label data-name="xmlvip33"></label> : <label class="shopinteg">0</label></span>
+							<input type="button" class="hideInput_style" data-name="xmlmall29" value=" "/> 
+						</div>
+					</div>
+					<div style="height: 60px;"></div>
+		   		</div>
+			</div>  
+		</div> 
+		<!--#include file="footer.html"--> 
+		<img id="loading" src="images3/loading.gif" />
+        <div id="layer_load"></div>
+        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?j=3" charset="utf-8"></script>
+	</body>
+</html>

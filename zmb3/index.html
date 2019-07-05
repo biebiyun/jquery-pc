@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="@cssurl"/> 
+		<script type="text/javascript" src="js/jquery.min.js?z=3"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js?z=3"></script> 
+		<script type="text/javascript" src="js/public.js?z=3"></script>
+		<script type="text/javascript" src="js/index.js?z=3"></script>
+		<link rel="shortcut icon" href="@iconurl" type="image/x-icon" />
+	</head>
+	<body data-id="@hotelid" data-url="@urlapi"> 
+		<!--#include file="tou.html"-->
+		<div class="bgCover"></div>
+		<div class="index_banner pr"> 
+			<div class="focus"> 
+		    	<ul> 
+		        	@lbimg
+		      	</ul>  
+		   </div> 
+		</div>  
+		<div class="index_title top2">
+			<div class="top_second">
+				<div class="title_second">
+					<p class="title hotelName"></p>
+					<p class="content indexAbout"></p>
+					<ol class="num">  
+					</ol>
+				</div>  
+			</div>
+		</div> 
+		<div class="pic_list">
+			<div class="top_second">
+				<div class="list_second">
+					@indexcontent
+					<!--<div class="list">
+						<img src="images3/discount.png" class="adaimg" />
+						<ul onclick="window.location.href='discount.html'">
+							<li class="title" data-name="xmltext39"></li>
+							<li data-name="xmltext129"></li>
+						</ul> 
+					</div>
+					<div class="list">
+						<img src="images3/room.png" class="adaimg" />
+						<ul onclick="window.location.href='room.html'">
+							<li class="title" data-name="xmltext191"></li>
+							<li data-name="xmltext52"></li>
+						</ul> 
+					</div>
+					<div class="list">
+						<img src="images3/food.png" class="adaimg" />
+						<ul onclick="window.location.href='repast.html'">
+							<li class="title" data-name="xmltext82"></li>
+							<li data-name="xmltext19"></li>
+						</ul> 
+					</div>
+					<div class="list">
+						<img src="images3/food.png" class="adaimg" />
+						<ul onclick="window.location.href='news.html'">
+							<li class="title" data-name="xmltext33"></li>
+							<li data-name="xmltext194"></li>
+						</ul> 
+					</div> 
+					<div class="list">
+						<img src="images3/food.png" class="adaimg" />
+						<ul onclick="window.location.href='meeting.html'">
+							<li class="title" data-name="xmltext75"></li>
+							<li data-name="xmltext25"></li>
+						</ul> 
+					</div> 
+					<div class="list">
+						<img src="images3/food.png" class="adaimg" />
+						<ul onclick="window.location.href='facilities.html'">
+							<li class="title" data-name="xmltext45"></li>
+							<li data-name="xmltext46"></li>
+						</ul> 
+					</div>  -->
+				</div>
+ 			</div>
+		</div>	
+		<!--#include file="footer.html"--> 
+		<img id="loading" src="images3/loading.gif" />
+        <div id="layer_load"></div>
+	</body>
+</html>

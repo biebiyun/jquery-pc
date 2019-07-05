@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="@cssurl"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery.min.js?j=3"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js?j=3"></script>
+		<script type="text/javascript" src="js/public.js?j=3"></script>
+		<script type="text/javascript" src="js/index.js?j=3"></script> 
+		<script type="text/javascript" src="js/admin/news.js?j=3"></script>
+		<link rel="shortcut icon" href="@iconurl" type="image/x-icon" />
+	</head>
+	<body data-id="@hotelid" data-url="@urlapi"> 
+		 <!--#include file="tou.html"-->
+		<div class="index_banner pr"> 
+			<div class="focus"> 
+		    	<ul> 
+		        	@lbimg
+		       </ul> 
+		    </div>
+		</div>
+		<div class="index_content">
+			<div class="secondDiv">
+				<div class="nav">
+					<ul>
+						 
+					</ul> 
+				</div>
+				<div class="navhide">
+					
+				</div>
+			</div>	 
+		   <div class="secondDiv">
+				<div class="hotel_intro left_box">
+					<div class="jiathis_style_24x24"> 
+						<a class="jiathis_button_qzone"></a>
+						<a class="jiathis_button_tsina"></a> 
+						<a class="jiathis_button_weixin"></a>  
+					</div>
+					<p class="share"> 
+						<span data-name="xmltext177"></span> 
+				    </p> 
+				    <p class="name hotelName"></p>
+				    <p class="title" data-name="xmltext33"></p>
+				</div> 
+			</div>  
+			<div class="secondDiv">
+				<div class="hotel_news left_box">   
+				    <div class="news_content clearfix">
+			   	   	  	
+			   	   	  </div>
+			   	   	  <div class="pag clearfix" id="pagNews">
+            
+                      </div>
+				</div>
+			</div>
+		</div>
+		 <!--#include file="footer.html"-->
+		<img id="loading" src="images3/loading.gif" />
+        <div id="layer_load"></div>
+        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?j=3" charset="utf-8"></script>
+	</body>
+</html>

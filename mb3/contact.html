@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="@cssurl"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery.min.js?j=3"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js?j=3"></script>
+	 	<script type="text/javascript" src="js/public.js?j=3"></script>
+		<script type="text/javascript" src="js/index.js?j=3"></script> 
+		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.2&services=true?j=3"></script>
+		<script type="text/javascript" src="js/admin/contact.js?j=3" ></script>
+		<link rel="shortcut icon" href="@iconurl" type="image/x-icon" />
+	</head>
+	<body data-id="@hotelid" data-url="@urlapi">  
+		 <!--#include file="tou.html"-->
+		<div class="index_banner pr"> 
+			<div class="focus"> 
+		    	<ul> 
+		        	@lbimg
+		       </ul> 
+		    </div>
+		</div>
+		<div class="index_content">
+			<div class="secondDiv">
+				<div class="nav">
+					<ul>
+						 
+					</ul> 
+				</div> 
+				<div class="member_service left_box">
+					<div class="jiathis_style_24x24"> 
+						<a class="jiathis_button_qzone"></a>
+						<a class="jiathis_button_tsina"></a> 
+						<a class="jiathis_button_weixin"></a>  
+					</div>
+					<p class="share"> 
+						<span data-name="xmltext177"></span> 
+				    </p> 
+				    <p class="name hotelName" data-name="xmltext178"></p>
+				    <p class="title" data-name="xmltext3"></p>
+				    <div class="map" id="map"></div>
+				     <div class="about_contactAs"> 
+				   	   	  <p class="title" data-name="xmltext115"></p> 
+				   	   	  <div class="left">
+				   	   	  	<ul>
+				   	   	  		<li>
+				   	   	  			<p><span>*</span><label data-name="xmlbook16"></label></p>
+				   	   	  			<input type="text" autocomplete="off"/><div class="nessF"><span class="ness">*</span><label data-name="xmlbook45"></label></div>
+				   	   	  		</li> 
+				   	   	  		<li>
+				   	   	  			<p><span>*</span><label data-name="xmltext115"></label></p>
+				   	   	  			<p class="if_help"><label data-name="xmltext116"></label></p>
+				   	   	  			<textarea autocomplete="off" class="txtProblem"></textarea>
+				   	   	  		</li>
+				   	   	  		<li><input class="contact_submit hideInput_style" type="button" data-name="xmltext15"></input></li>
+				   	   	  	</ul>
+				   	   	  </div>
+				   	      <div class="right clearfix">
+				   	      	<p data-name="xmltext117"></p>
+				   	      	<div class="right_left">
+				   	      		<ul class="groupMsg">
+				   	      			<li class="hotelName"></li>
+				   	      			<li>
+				   	      				<label data-name="xmltext185"></label>
+				   	      				<span class="hotelAddress"></span>
+				   	      			</li>
+				   	      			<li>
+				   	      				<label data-name="xmlbook69"></label>
+				   	      				<span class="contactTel"></span>
+				   	      			</li>
+				   	      			<li>
+				   	      				<label data-name="xmltext6"></label>
+				   	      				<span class="contactcz"></span>
+				   	      			</li> 
+				   	      			<li class="mapdric map1" data-name="xmltext66"></li>
+				   	      		</ul> 
+				   	      	</div> 
+				   	      </div>
+				   	  </div> 
+				</div>  
+			</div> 
+		</div>
+		<img id="loading" src="images3/loading.gif" />
+        <div id="layer_load"></div>
+		<!--#include file="footer.html"--> 
+		<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?j=3" charset="utf-8"></script>
+		 
+	</body>
+</html>

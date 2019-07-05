@@ -1,0 +1,26 @@
+﻿*{padding: 0;margin: 0;} 
+ ul li{list-style: none;} 
+ .bannerLeft{float: left;padding-left: 30px; height: 320px;
+ border-left:1px solid #D8D8D8;
+  box-shadow: 0 10px 15px  #FFFFFF, /*底部阴影*/ 
+    10px 0 15px #FFFFFF, /*右边阴影*/  
+    0 -10px 15px #FFFFFF, /*顶部阴影*/  
+    -2px 0 10px #B2B2B2; /*左边阴影*/ 
+    behavior: url(PIE-1.0.0/PIE.htc);
+ }
+.banner{margin-bottom: 20px; position: relative; height: 300px; top:20px; overflow: hidden;}
+.banner .img{position: absolute; left: 0; top: 0;overflow: hidden;}
+.banner .img li{float: left;}
+.banner .img li a{margin: 0 5px;width: 750px; height: 300px;overflow: hidden; display: block;} 
+.banner .btn{width: 30px; height: 50px; display: none;
+cursor: pointer;text-align: center;line-height: 50px;color: white;font-size: 20px; font-family: "宋体";
+background: rgba(0,0,0,0.5);position: absolute; top: 50%;margin-top: -25px;}
+/*.banner:hover .btn{display: block;}*/
+.banner .btn_l{left: 0;}
+.banner .btn_r{right: 0;}
+.bannerBox{margin-left: 270px; height: 320px;}
+.activity_box{padding: 20px 0; position: relative; height: 320px; overflow: hidden;}
+.activity_box .next_box{position: absolute; left: 0; top: 0;overflow: hidden;}
+.activity_box .next_box .activity_content{float: left;}
+
+ 
